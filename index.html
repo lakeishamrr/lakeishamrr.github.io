@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Your Name | Portfolio</title>
+  <title>Lakeisha M. Ramos Rosado | Portfolio</title>
 
   <style>
     :root {
@@ -13,7 +13,9 @@
       --text: #202b32;
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
     body {
       margin: 0;
@@ -39,10 +41,10 @@
     }
 
     .site-name {
+      color: white;
       font-size: 20px;
       font-weight: bold;
       text-decoration: none;
-      color: white;
     }
 
     nav {
@@ -56,7 +58,9 @@
       text-decoration: none;
     }
 
-    nav a:hover { color: #8fe0d5; }
+    nav a:hover {
+      color: #8fe0d5;
+    }
 
     main {
       max-width: 1100px;
@@ -88,23 +92,17 @@
 
     .eyebrow {
       color: var(--teal);
+      font-size: 13px;
       font-weight: bold;
       letter-spacing: 2px;
       text-transform: uppercase;
-      font-size: 13px;
     }
 
     h1 {
+      margin: 8px 0;
       color: var(--navy);
       font-size: clamp(38px, 6vw, 58px);
       line-height: 1.1;
-      margin: 8px 0;
-    }
-
-    .subtitle {
-      margin-top: 0;
-      color: #52626b;
-      font-size: 19px;
     }
 
     .more {
@@ -113,9 +111,38 @@
       border-top: 1px solid #dce4e2;
     }
 
-    h2 { color: var(--navy); }
+    h2 {
+      color: var(--navy);
+    }
 
-    .www.linkedin.com/in/lakeisha-m-ramos-rosado-a96b1b178/
+    .contact {
+      display: flex;
+      gap: 16px;
+      margin-top: 22px;
+    }
+
+    .contact a {
+      display: grid;
+      width: 42px;
+      height: 42px;
+      place-items: center;
+      border: 1px solid var(--teal);
+      border-radius: 50%;
+      color: var(--teal);
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .contact a:hover {
+      background: var(--teal);
+      color: white;
+    }
+
+    .contact svg {
+      display: block;
+      width: 21px;
+      height: 21px;
+      fill: currentColor;
+    }
 
     @media (max-width: 700px) {
       .nav-wrap {
@@ -123,9 +150,13 @@
         flex-direction: column;
       }
 
-      nav { gap: 12px 18px; }
+      nav {
+        gap: 12px 18px;
+      }
 
-      main { margin: 34px auto; }
+      main {
+        margin: 34px auto;
+      }
 
       .hero {
         grid-template-columns: 1fr;
@@ -137,7 +168,9 @@
         height: 300px;
       }
 
-      .intro-card { padding: 24px; }
+      .intro-card {
+        padding: 24px;
+      }
     }
   </style>
 </head>
@@ -145,7 +178,8 @@
 <body>
   <header>
     <div class="nav-wrap">
-      <a class="site-name" href="index.html">Your Name</a>
+      <a class="site-name" href="index.html">Lakeisha Ramos Rosado</a>
+
       <nav>
         <a href="index.html">Home</a>
         <a href="research.html">Projects</a>
@@ -157,23 +191,28 @@
 
   <main>
     <section class="hero">
-      <!-- Upload a photo to your repository and update this filename if needed -->
-      <img class="portrait" src="profile.JPG" alt="Portrait of Your Name">
+      <img
+        class="portrait"
+        src="profile.JPG"
+        alt="Portrait of Lakeisha M. Ramos Rosado"
+      >
 
       <div class="intro-card">
         <div class="eyebrow">Hello, I'm</div>
         <h1>Lakeisha M. Ramos Rosado</h1>
 
         <p>
-          Welcome to my website! I’m a student at Johns Hopkins University, interested in
-          [your subject or activities]. Here I share a little about what I’m
-          learning, the projects I’m working on, and the things I care about.
+          Welcome to my website! I’m a student at Johns Hopkins University,
+          interested in [your subject or activities]. Here I share a little
+          about what I’m learning, the projects I’m working on, and the things
+          I care about.
         </p>
       </div>
     </section>
 
     <section class="more">
       <h2>A little more about me</h2>
+
       <p>
         I’m currently exploring [a project, topic, or goal]. Outside of that,
         I enjoy [hobbies or interests]. I’m always glad to meet people with
@@ -181,24 +220,31 @@
       </p>
 
       <div class="contact" aria-label="Contact and social links">
-  <a href="mailto:lramosr1@jhu.edu" aria-label="Email">
-    <svg viewBox="0 0 24 24" aria-hidden="true">
-      <path d="M3 5h18a2 2 0 0 1 2 2v1L12 14 1 8V7a2 2 0 0 1 2-2zm-2 5.3 10.5 5.8a1 1 0 0 0 1 0L23 10.3V19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8.7z"/>
-    </svg>
-  </a>
+        <a href="mailto:lramosr1@jhu.edu" aria-label="Email">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 5h18a2 2 0 0 1 2 2v1L12 14 1 8V7a2 2 0 0 1 2-2zm-2 5.3 10.5 5.8a1 1 0 0 0 1 0L23 10.3V19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8.7z"/>
+          </svg>
+        </a>
 
-  <a href="https://orcid.org/0000-0002-1056-3144" aria-label="ORCID">
-    <svg viewBox="0 0 24 24" aria-hidden="true">
-      <path d="M12 1a11 11 0 1 0 0 22 11 11 0 0 0 0-22zM7.2 5.8a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4zM8.1 18H6.3V9.8h1.8V18zm3.1 0H9.4V9.8h1.8v.9a3 3 0 0 1 2.5-1.1c2 0 3.2 1.3 3.2 3.6V18h-1.8v-4.4c0-1.4-.6-2.2-1.8-2.2-1.3 0-2.1.9-2.1 2.4V18z"/>
-    </svg>
-  </a>
+        <a
+          href="https://orcid.org/0000-0002-1056-3144"
+          aria-label="ORCID"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 1a11 11 0 1 0 0 22 11 11 0 0 0 0-22zM7.2 5.8a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4zM8.1 18H6.3V9.8h1.8V18zm3.1 0H9.4V9.8h1.8v.9a3 3 0 0 1 2.5-1.1c2 0 3.2 1.3 3.2 3.6V18h-1.8v-4.4c0-1.4-.6-2.2-1.8-2.2-1.3 0-2.1.9-2.1 2.4V18z"/>
+          </svg>
+        </a>
 
-  <a href="https://www.linkedin.com/in/lakeisha-m-ramos-rosado-a96b1b178/" aria-label="LinkedIn">
-    <svg viewBox="0 0 24 24" aria-hidden="true">
-      <path d="M20.4 2H3.6A1.6 1.6 0 0 0 2 3.6v16.8A1.6 1.6 0 0 0 3.6 22h16.8a1.6 1.6 0 0 0 1.6-1.6V3.6A1.6 1.6 0 0 0 20.4 2zM8 18H5V9h3v9zM6.5 7.8a1.7 1.7 0 1 1 0-3.4 1.7 1.7 0 0 1 0 3.4zM19 18h-3v-4.4c0-1.1 0-2.5-1.5-2.5s-1.7 1.2-1.7 2.4V18h-3V9h2.9v1.2h.1c.4-.8 1.4-1.5 2.8-1.5 3 0 3.5 2 3.5 4.5V18z"/>
-    </svg>
-  </a>
-</div>
+        <a
+          href="https://www.linkedin.com/in/lakeisha-m-ramos-rosado-a96b1b178/"
+          aria-label="LinkedIn"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20.4 2H3.6A1.6 1.6 0 0 0 2 3.6v16.8A1.6 1.6 0 0 0 3.6 22h16.8a1.6 1.6 0 0 0 1.6-1.6V3.6A1.6 1.6 0 0 0 20.4 2zM8 18H5V9h3v9zM6.5 7.8a1.7 1.7 0 1 1 0-3.4 1.7 1.7 0 0 1 0 3.4zM19 18h-3v-4.4c0-1.1 0-2.5-1.5-2.5s-1.7 1.2-1.7 2.4V18h-3V9h2.9v1.2h.1c.4-.8 1.4-1.5 2.8-1.5 3 0 3.5 2 3.5 4.5V18z"/>
+          </svg>
+        </a>
+      </div>
+    </section>
   </main>
 </body>
 </html>
