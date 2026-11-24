@@ -3,24 +3,128 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Website</title>
+  <title>Your Name</title>
+
   <style>
-    body {
-      max-width: 700px;
-      margin: 80px auto;
-      padding: 0 20px;
-      font: 18px/1.6 Arial, sans-serif;
-      color: #222;
+    :root {
+      --accent: #168eae;
+      --text: #222;
+      --line: #ddd;
     }
 
-    h1 { color: #0969da; }
-    a { color: #0969da; }
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      gap: 36px;
+      padding: 18px 6%;
+      border-bottom: 1px solid var(--line);
+    }
+
+    nav a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    nav a:hover { text-decoration: underline; }
+
+    main {
+      max-width: 1100px;
+      margin: 48px auto;
+      padding: 0 24px;
+    }
+
+    .intro {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      margin-bottom: 48px;
+    }
+
+    h1 {
+      margin: 0;
+      color: var(--accent);
+      font-size: clamp(42px, 7vw, 68px);
+      line-height: 1.1;
+    }
+
+    .subtitle { font-size: 23px; }
+
+    .portrait {
+      width: 210px;
+      height: 210px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    a { color: var(--accent); }
+
+    @media (max-width: 650px) {
+      nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px 22px;
+      }
+
+      .intro {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 20px;
+      }
+
+      .portrait {
+        width: 160px;
+        height: 160px;
+      }
+    }
   </style>
 </head>
+
 <body>
-  <h1>Hello, I'm Lakeisha M. Ramos Rosado</h1>
-  <p>Welcome to my website!</p>
-  <p>I'm interested in [your interests or work].</p>
-  <a href="https://github.com/yourusername">Visit my GitHub profile</a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="about.html">About Me</a>
+    <a href="blog.html">Blog</a>
+    <a href="cv.pdf">CV</a>
+  </nav>
+
+  <main>
+    <section class="intro">
+      <div>
+        <h1>Your Name</h1>
+        <p class="subtitle">Student / Researcher at Your University</p>
+        <p>your.email@example.com</p>
+      </div>
+
+      <!-- Upload your picture to the repository and replace this filename -->
+      <img class="portrait" src="profile.jpg" alt="A photo of Your Name">
+    </section>
+
+    <p>
+      Hello! I’m a student at <strong>Your University</strong>, interested in
+      [your interests]. This website is where I share information about my work,
+      projects, and experience.
+    </p>
+
+    <p>
+      My current work focuses on [describe a project, subject, or goal].
+      I’m especially interested in [another interest].
+    </p>
+
+    <p>
+      Feel free to <a href="mailto:your.email@example.com">get in touch</a>!
+    </p>
+  </main>
 </body>
 </html>
