@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research | Lakeisha M. Ramos Rosado</title>
+
+  <style>
+    :root {
+      --navy: #18344a;
+      --teal: #319a91;
+      --paper: #f6f8f7;
+      --text: #202b32;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.65;
+    }
+
+    header {
+      background: var(--navy);
+      color: white;
+      padding: 20px 7%;
+    }
+
+    .nav-wrap {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .site-name {
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 22px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: #8fe0d5;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 58px auto;
+      padding: 0 24px;
+    }
+
+    h1,
+    h2 {
+      color: var(--navy);
+    }
+
+    h1 {
+      margin: 8px 0 24px;
+      font-size: clamp(38px, 6vw, 58px);
+      line-height: 1.1;
+    }
+
+    .research-card {
+      background: white;
+      margin-bottom: 24px;
+      padding: 28px;
+      border-radius: 18px;
+      box-shadow: 0 8px 28px #18344a12;
+    }
+
+    @media (max-width: 700px) {
+      .nav-wrap {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      nav {
+        gap: 12px 18px;
+      }
+
+      main {
+        margin: 34px auto;
+      }
+
+      .research-card {
+        padding: 22px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="nav-wrap">
+      <a class="site-name" href="index.html">Lakeisha Ramos Rosado</a>
+
+      <nav>
+        <a href="index.html">About</a>
+        <a href="CV.html">CV</a>
+        <a href="research.html">Research</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Research</h1>
+
+    <section class="research-card">
+      <h2>Research overview</h2>
+      <p>
+        My research uses observations of transiting giant exoplanets to study
+        their atmospheres. I’m particularly interested in atmospheric escape
+        and evolution, and in how observations across ultraviolet, optical, and
+        infrared wavelengths can reveal the processes shaping these worlds.
+      </p>
+    </section>
+
+    <section class="research-card">
+      <h2>Research projects</h2>
+      <p>
+        I study a range of questions about giant exoplanet atmospheres, including
+        atmospheric escape, clouds, and differences between planets’ morning
+        and evening sides. More details about individual projects will be added
+        here.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
